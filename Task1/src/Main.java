@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 
 public class Main {
 
-	static StringBuilder sb = new StringBuilder("");
+	static StringBuilder sb;
 	static StringBuilder result = new StringBuilder("");
 
 	static StringBuilder getReversed(char[] arg) {
