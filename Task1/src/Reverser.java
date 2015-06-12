@@ -37,8 +37,8 @@ public class Reverser {
 		String[] inputArray = input.split(" ");
 		for (int i = 0; i < inputArray.length; i++) {
 			this.fillFigure(inputArray[i]);
-			char[] d = inputArray[i].toCharArray();
-			this.fillLetter(d);
+			char[] bufferArray = inputArray[i].toCharArray();
+			this.fillLetter(bufferArray);
 			for (int j = 0; j < result.length; j++) {
 				reversedInput += (result[j]);
 			}
