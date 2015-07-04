@@ -1,0 +1,39 @@
+import java.util.Random;
+
+/**
+ * Created by Misha on 04.07.15.
+ */
+public class PrintElems {
+    public static int[] array=new int[100];
+    static void fillArray(int[] arr){
+        Random rand=new Random();
+
+        for(int i=0;i<100;i++){
+            arr[i]=rand.nextInt(1000);
+        }
+    }
+    static void sortArray(int[] arr){
+        for(int i=0;i<arr.length;i++){
+            for(int j=0;j<arr.length-1;j++){
+                int temp;
+                if(arr[j]>arr[j+1]){
+                    temp=arr[j];
+                    arr[j]=arr[j+1];
+                    arr[j+1]=temp;
+                }
+
+            }
+        }
+    }
+    static void printArray(int[] arr){
+        for(int i=0;i<arr.length;i++){
+            System.out.println(arr[i]);
+        }
+    }
+
+    public static void main(String[] args) {
+        fillArray(array);
+        sortArray(array);
+        printArray(array);
+    }
+}
