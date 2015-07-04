@@ -1,0 +1,52 @@
+
+/**
+ * Created by Misha on 04.07.15.
+ */
+public class PrintMinAndMax {
+    public static boolean flag=false;
+    static void printInt(){
+
+        int i=Integer.MIN_VALUE;
+        while(!flag){
+            if(i==Integer.MIN_VALUE || i==Integer.MAX_VALUE)
+                System.out.println(i);
+                if(i==Integer.MAX_VALUE)
+                    flag=true;
+            i++;
+        }
+        flag=false;
+    }
+    static void printByte(){
+
+        byte i=Byte.MIN_VALUE;
+        while(!flag){
+            if(i==Byte.MIN_VALUE || i==Byte.MAX_VALUE)
+                System.out.println(i);
+            if(i==Byte.MAX_VALUE)
+                flag=true;
+            i++;
+        }
+        flag=false;
+    }
+    static void printChar(){
+
+        int i=Character.MIN_VALUE;
+        while(!flag){
+            if(i==Character.MIN_VALUE || i==Character.MAX_VALUE)
+                System.out.println(i);
+            if(i==Character.MAX_VALUE)
+                flag=true;
+            i++;
+        }
+        flag=false;
+    }
+
+
+    public static void main(String[] args) {
+        printInt();
+        System.out.println("-----------");
+        printByte();
+        System.out.println("-----------");
+        printChar();
+    }
+}
